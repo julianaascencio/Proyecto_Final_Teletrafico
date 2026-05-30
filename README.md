@@ -111,7 +111,7 @@ La solución permite demostrar el funcionamiento de una infraestructura moderna 
 
 ---
 
-## 7. Estructura Recomendada del Repositorio
+## 7. Estructura de Repositorio
 
 ```text
 proyecto-final-conmutacion-teletrafico/
