@@ -1294,26 +1294,3 @@ Respuesta: HTTP/1.1 200 OK
 * Kali Linux: https://www.kali.org/
 
 ---
-
-## 19. Anexos
-
-En la carpeta `evidencias/` se deben almacenar las capturas correspondientes al desarrollo del proyecto.
-
-Cada imagen debe nombrarse de forma clara y organizada para facilitar su revisión.
-
-Ejemplo:
-
-```text
-evidencias/01-docker-ps.png
-evidencias/02-chatbot-interfaz.png
-evidencias/03-chatbot-metrics.png
-evidencias/04-kubernetes-node-ready.png
-evidencias/05-agones-pods-running.png
-evidencias/06-fleet-supertuxkart.png
-evidencias/07-gameservers-ready.png
-evidencias/08-wireshark-http.png
-evidencias/09-prometheus-query.png
-evidencias/10-grafana-dashboard.png
-evidencias/11-kali-error-dns.png
-evidencias/12-arquitectura-general.png
-```
