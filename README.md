@@ -163,10 +163,12 @@ docker --version
 ```powershell
 docker ps
 ```
+<img width="439" height="331" alt="DOCKER PS" src="https://github.com/user-attachments/assets/43e97160-c327-4ce2-8cd9-1c50869eb17f" />
 
 Con estos comandos se verificó que Docker estuviera instalado y que el motor de contenedores estuviera activo.
 
-(Evidencia requerida: captura del comando `docker --version` y `docker ps`. Guardar como `evidencias/01-docker-ps.png`)
+![Uploading DOCKER PS.png…]()
+
 
 ---
 
@@ -243,9 +245,11 @@ El servicio quedó disponible en:
 http://localhost:5000
 ```
 
-(Evidencia requerida: captura del comando `docker build -t chatbot-proyecto .` finalizado correctamente. Guardar como `evidencias/docker-build-chatbot.png`)
+<img width="879" height="149" alt="image" src="https://github.com/user-attachments/assets/77668d01-39ce-400d-a0b2-df8c89acf74b" />
 
-(Evidencia requerida: captura de `docker ps` mostrando `chatbot-proyecto` en ejecución y el puerto `5000`. Guardar como `evidencias/01-docker-ps.png`)
+
+<img width="870" height="592" alt="image" src="https://github.com/user-attachments/assets/3f398301-942c-462c-8fbc-4cbbbb8cfbcb" />
+
 
 ---
 
@@ -282,7 +286,8 @@ Además, la interfaz visual permite hacer clic en botones como:
 
 Cada consulta aumenta los contadores internos del chatbot.
 
-(Evidencia requerida: captura del chatbot respondiendo una consulta sobre Kubernetes. Guardar como `evidencias/02-chatbot-interfaz.png`)
+<img width="626" height="502" alt="CHATBOT" src="https://github.com/user-attachments/assets/c02497b7-0536-4c03-91c7-4ae23c0bafee" />
+
 
 ---
 
@@ -317,7 +322,8 @@ Se verificó el endpoint en:
 http://localhost:5000/metrics
 ```
 
-(Evidencia requerida: captura de `http://localhost:5000/metrics` mostrando las métricas expuestas. Guardar como `evidencias/03-chatbot-metrics.png`)
+<img width="453" height="473" alt="METRICS" src="https://github.com/user-attachments/assets/a86ae57f-fee5-41a0-9fa2-4b8b2debf818" />
+
 
 ---
 
@@ -338,7 +344,8 @@ desktop-control-plane   Ready    control-plane   v1.34.3
 
 Esto confirmó que el clúster Kubernetes estaba activo y disponible para desplegar servicios.
 
-(Evidencia requerida: captura del comando `kubectl get nodes` mostrando el nodo en estado `Ready`. Guardar como `evidencias/04-kubernetes-node-ready.png`)
+<img width="443" height="43" alt="EVIDENCIA 1" src="https://github.com/user-attachments/assets/a9967b2c-90ec-4351-9906-506be58125b3" />
+
 
 También se validaron los pods internos del sistema:
 
@@ -346,7 +353,8 @@ También se validaron los pods internos del sistema:
 kubectl get pods -A
 ```
 
-(Evidencia requerida: captura de `kubectl get pods -A` mostrando pods del sistema en estado `Running`. Guardar como `evidencias/kubernetes-pods-system.png`)
+<img width="458" height="301" alt="EVIDENCIA 2" src="https://github.com/user-attachments/assets/524cd611-8ece-4742-9de5-90458fa87d45" />
+
 
 ---
 
@@ -384,7 +392,8 @@ Resultado esperado:
 version.BuildInfo{Version:"v4.2.0"...}
 ```
 
-(Evidencia requerida: captura del comando `helm version` funcionando correctamente. Guardar como `evidencias/helm-version.png`)
+<img width="873" height="119" alt="image" src="https://github.com/user-attachments/assets/664b8a6f-1749-4f46-89fd-77aace8a9490" />
+
 
 ---
 
@@ -425,7 +434,8 @@ agones-extensions    1/1 Running
 agones-ping          1/1 Running
 ```
 
-(Evidencia requerida: captura de `kubectl get pods -n agones-system` mostrando todos los pods en estado `Running`. Guardar como `evidencias/05-agones-pods-running.png`)
+<img width="870" height="510" alt="image" src="https://github.com/user-attachments/assets/96103942-4d03-4c2a-82b0-6c57054037b2" />
+
 
 ---
 
@@ -456,7 +466,8 @@ NAME           SCHEDULING   DESIRED   CURRENT   ALLOCATED   READY
 supertuxkart   Packed       2         2         0           2
 ```
 
-(Evidencia requerida: captura de `kubectl get fleet` mostrando `supertuxkart`, `DESIRED 2`, `CURRENT 2`, `READY 2`. Guardar como `evidencias/06-fleet-supertuxkart.png`)
+<img width="451" height="75" alt="EVIDENCIA 3" src="https://github.com/user-attachments/assets/6046c596-9f7e-4d1a-8c2c-45847d1b6070" />
+
 
 ---
 
@@ -478,7 +489,8 @@ supertuxkart-75jcx-xhj77   Ready   172.19.0.4   7057   desktop-control-plane
 
 Esto confirmó que los servidores de juego estaban activos y listos para recibir conexiones.
 
-(Evidencia requerida: captura de `kubectl get gameservers` mostrando dos servidores en estado `Ready`. Guardar como `evidencias/07-gameservers-ready.png`)
+<img width="448" height="104" alt="EVIDENCIA 4" src="https://github.com/user-attachments/assets/eb372fbf-47df-42a6-8b3c-7a54e9154a89" />
+
 
 ---
 
@@ -518,7 +530,8 @@ HTTP/1.1 200 OK
 
 Esto permitió validar la comunicación cliente-servidor entre el navegador y el chatbot Flask.
 
-(Evidencia requerida: captura de Wireshark mostrando `GET /chat?q=kubernetes` y `HTTP/1.1 200 OK`. Guardar como `evidencias/08-wireshark-http.png`)
+<img width="1906" height="949" alt="Captura de pantalla 2026-05-29 192408" src="https://github.com/user-attachments/assets/b613ea30-b33d-4d21-8a71-c82f4560aa83" />
+
 
 ---
 
@@ -567,7 +580,8 @@ Prometheus quedó disponible en:
 http://localhost:9090
 ```
 
-(Evidencia requerida: captura de `docker ps` mostrando `prometheus-proyecto` en ejecución y el puerto `9090`. Guardar como `evidencias/prometheus-docker-ps.png`)
+<img width="878" height="661" alt="Captura de pantalla 2026-05-30 101041" src="https://github.com/user-attachments/assets/d9fe3784-7d57-4989-93b2-554a6d0fa6c5" />
+
 
 ---
 
@@ -599,7 +613,7 @@ proyecto_kubernetes_status
 chatbot_preguntas_por_tema
 ```
 
-(Evidencia requerida: captura de Prometheus ejecutando la consulta `chatbot_total_preguntas`. Guardar como `evidencias/09-prometheus-query.png`)
+<img width="1207" height="718" alt="Captura de pantalla 2026-05-30 101309" src="https://github.com/user-attachments/assets/644b001d-e1d3-47b4-90bd-291b20288b91" />
 
 ---
 
@@ -625,8 +639,6 @@ Contraseña: admin
 ```
 
 Posteriormente se configuró una nueva contraseña para la práctica.
-
-(Evidencia requerida: captura de Grafana abierto en `http://localhost:3001`. Guardar como `evidencias/grafana-login.png`)
 
 ---
 
@@ -658,7 +670,8 @@ Resultado esperado:
 Successfully queried Prometheus
 ```
 
-(Evidencia requerida: captura de Grafana mostrando Prometheus agregado correctamente como Data Source. Guardar como `evidencias/grafana-prometheus-datasource.png`)
+<img width="1527" height="295" alt="image" src="https://github.com/user-attachments/assets/5d5c970d-3fd8-4a1c-8d33-775d3fee94f6" />
+
 
 ---
 
@@ -687,7 +700,8 @@ Paneles implementados:
 | Servidores SuperTuxKart   | `proyecto_gameservers_ready` | Stat                    |
 | Agones Controller         | `proyecto_agones_status`     | Stat                    |
 
-(Evidencia requerida: captura completa del dashboard final de Grafana mostrando métricas en tiempo real. Guardar como `evidencias/10-grafana-dashboard.png`)
+<img width="959" height="503" alt="GRAFANA" src="https://github.com/user-attachments/assets/5edfa434-71aa-4022-87b3-1b13dc4c9da9" />
+
 
 ---
 
